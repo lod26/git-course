@@ -57,7 +57,7 @@ const removePost = (post) => {
         />
         <Postlist remove={removePost} posts ={sortedAndSearchedPosts} title='Список постов 1'/>
         <Postlist remove={removePost} posts ={sortedAndSearchedPosts} title='Список постов 1'/>
-
+        <Postlist remove={removePost} posts ={sortedAndSearchedPosts} title='Список постов 1'/>
 
     </div>
   );
