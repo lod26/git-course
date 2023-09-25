@@ -11,7 +11,7 @@ const PostList = ({posts , title ,remove}) => {
             </h1>
         )
     }
-
+//test
     return (
         <div className={'post-list'}>
             <h1 style={{textAlign: "center"}}>{title}</h1>
