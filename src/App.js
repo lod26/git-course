@@ -22,7 +22,6 @@ const [filter , setFilter] = useState({sort:'', query:''})
 const  [modal ,setModal] = useState(false)
 
 const sortedPosts = useMemo(()=> {
-    console.log('Функция отработала')
     if(filter.sort) {
         return [...posts].sort((a , b)=> a[filter.sort].localeCompare(b[filter.sort]))
     }
@@ -55,8 +54,6 @@ const removePost = (post) => {
             filter={filter}
             setFilter={setFilter}
         />
-        <Postlist remove={removePost} posts ={sortedAndSearchedPosts} title='Список постов 1'/>
-        <Postlist remove={removePost} posts ={sortedAndSearchedPosts} title='Список постов 1'/>
         <Postlist remove={removePost} posts ={sortedAndSearchedPosts} title='Список постов 1'/>
 
     </div>
